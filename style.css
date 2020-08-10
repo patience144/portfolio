@@ -1,7 +1,20 @@
-html img{
-  align-content: center;
+a {
+  font-family: serif;
 }
 
+a:link    { color: blue;  }
+a:visited { color: black;   }
+a:hover   { color: purple; }
+a:active  { color: red;  }
+
+
+html img{
+  align-content: center;
+  height:400px;
+  width:1350px; 
+
+}
+/*the nav set up was difficult to achieve but I got it to where I wanted it*/
 .nav {
     word-spacing: 150px;
     padding: 2%;
@@ -9,7 +22,7 @@ html img{
 
   body{
     background-color: rgb(158, 135, 163);
-    
+    color: black;
   }
   
   .heading {
@@ -17,10 +30,15 @@ html img{
     padding: 0 0 0 80px;
     text-align: center;
   }
-
+/*I had to make sure my img's were separate since the css was so different*/
   .avatar p{
     font-size: 2em;
     float: right;
+  }
+
+  .avatar img{
+    height:350px;
+    width: 300px;
   }
   
   .flex-container {
@@ -28,7 +46,7 @@ html img{
     flex-wrap: wrap;
     margin: 20px;
   }
-  
+  /*I like classes*/
   .sec1 {
     width: 500px;
     border: 2px black solid;
