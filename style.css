@@ -37,14 +37,13 @@ a:active  { color: red;  }
   }
 
   body{
-    background-color: rgb(158, 135, 163);
+    background-color:  rgb(158, 135, 163);
     color: black;
   }
   
   .heading {
     font-size: 2em;
     text-align: center;
-    border: 1px solid white;
   }
 /*I had to make sure my img's were separate since the css was so different*/
   
@@ -62,6 +61,7 @@ a:active  { color: red;  }
   .avatar img{
     height:350px;
     width: 300px;
+    border-radius: 120px;
   }
 
   /*I like classes*/
@@ -69,16 +69,9 @@ a:active  { color: red;  }
     flex: 3;
     padding: 2%;
     margin: 2%;
-    border: 1px solid white;
+    border: 5px ridge rgb(78, 11, 78);
     width: 100%;
-    
   }
-
-  /*.item {
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-  }*/
 
   .wrap{
     display: flex;
@@ -88,7 +81,7 @@ a:active  { color: red;  }
   form {
     max-width: 500px;
     margin: 2em auto;
-    border: 2px solid purple;
+    border: 5px ridge rgb(78, 11, 78);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -103,40 +96,6 @@ label {
     flex-direction: column;
     padding-bottom: 10px;
 }
-  
-  /*.sec2 {
-    width: 500px;
-    border: 2px black solid;
-    margin: 20px;
-  }
-  
-  .sec3 {
-    width: 500px;
-    border: 2px black solid;
-    margin: 20px;
-  }
-  
-  .sec4 {
-    width: 500px;
-    border: 2px black solid;
-    margin: 20px;
-  }
-  
-  .sec5 {
-    width: 500px;
-    border: 2px black solid;
-    margin: 20px;
-  }
-  
-  .sec6 {
-    width: 500px;
-    border: 2px black solid;
-    margin: 20px;
-  }
-  
-  .sec7 {
-    width: 300px;
-  }*/
   
   h2 {
     font-family: serif;
