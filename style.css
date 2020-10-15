@@ -102,6 +102,12 @@ label {
     font-size: 2em;;
   }
 
+  @media all and (max-width: 760px){
+    .nav {
+      flex-direction: column;
+    }
+  } 
+
   @media all and (min-width: 600px) {
     .wrap{
       flex-direction: row;
@@ -111,3 +117,5 @@ label {
       width: 30%;
     }
   }
+
+  
