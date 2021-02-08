@@ -1,11 +1,12 @@
-html , body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -13,109 +14,117 @@ a {
   font-family: serif;
 }
 
-a:link    { color: blue;  }
-a:visited { color: black;   }
-a:hover   { color: purple; }
-a:active  { color: red;  }
+a:link {
+  color: blue;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: purple;
+}
+a:active {
+  color: red;
+}
 
 .banner {
   width: 100%;
-  height:400px;
+  height: 400px;
 }
 
-.banner img{
+.banner img {
   width: 100%;
   height: 100%;
 }
 
-
 /*the nav set up was difficult to achieve but I got it to where I wanted it*/
 .nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 2%;
-  }
-
-  body{
-    background-color:  rgb(158, 135, 163);
-    color: black;
-  }
-  
-  .heading {
-    font-size: 2em;
-    text-align: center;
-  }
-/*I had to make sure my img's were separate since the css was so different*/
-  
-  .avatar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .avatar p{
-    font-size: 2em;
-    display: inline;
-  }
-
-  .avatar img{
-    height:350px;
-    width: 300px;
-    border-radius: 120px;
-  }
-
-  /*I like classes*/
-  .sec1 {
-    flex: 3;
-    padding: 2%;
-    margin: 2%;
-    border: 5px ridge rgb(78, 11, 78);
-    width: 100%;
-  }
-
-  .wrap{
-    display: flex;
-    flex-direction: column;
-  }
-
-  form {
-    max-width: 500px;
-    margin: 2em auto;
-    border: 5px ridge rgb(78, 11, 78);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
 }
 
-form button{
-    margin-right: 400px;
-    
+body {
+  background-color: rgb(219, 183, 203);
+  color: black;
+}
+
+.heading {
+  font-size: 2em;
+  text-align: center;
+}
+/*I had to make sure my img's were separate since the css was so different*/
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar p {
+  font-size: 2em;
+  display: inline;
+}
+
+.avatar img {
+  height: 350px;
+  width: 300px;
+  border-radius: 120px;
+}
+
+/*I like classes*/
+.sec1 {
+  flex: 3;
+  padding: 2%;
+  margin: 2%;
+  /* border: 5px ridge rgb(78, 11, 78); */
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  max-width: 500px;
+  margin: 2em auto;
+  /* border: 5px ridge rgb(78, 11, 78); */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  margin-right: 400px;
 }
 label {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
-  
-  h2 {
-    font-family: serif;
-    font-size: 2em;;
+
+h2 {
+  font-family: serif;
+  font-size: 2em;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 760px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .wrap {
+    flex-direction: row;
   }
 
-  @media all and (max-width: 760px){
-    .nav {
-      flex-direction: column;
-    }
-  } 
-
-  @media all and (min-width: 600px) {
-    .wrap{
-      flex-direction: row;
-    }
-
-    .sec1{
-      width: 30%;
-    }
+  .sec1 {
+    width: 30%;
   }
-
-  
+}
